@@ -266,7 +266,7 @@ body {
 }
 
 /* ==========================================================================
-   2. HERO SHOWCASE SECTION
+   2. HERO SHOWCASE SECTION & GENERATIVE PIXEL CANVAS
    ========================================================================== */
 .hero-section {
   padding-top: calc(var(--nav-height) + 4rem);
@@ -275,6 +275,19 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
+  background-color: var(--bg-pure-black);
+}
+
+#pixel-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-color: transparent;
 }
 
 .hero-content {
